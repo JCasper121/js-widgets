@@ -1,0 +1,112 @@
+html {
+  height: 100%;
+}
+html body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  height: 1vh;
+}
+html body .container {
+  height: 100%;
+}
+
+#flipping-cards {
+  text-align: center;
+}
+#flipping-cards .card-flip {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px 50px;
+}
+#flipping-cards .card-flip .card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+#flipping-cards .card-flip .card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+#flipping-cards .card-flip .card .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+#flipping-cards .card-flip .card .flip-card-inner .flip-card-front, #flipping-cards .card-flip .card .flip-card-inner .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+#flipping-cards .card-flip .card .flip-card-inner .flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+#flipping-cards .card-flip .card .flip-card-inner .flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+body .dropdown-container {
+  position: absolute;
+  left: 20;
+  z-index: 100;
+}
+body .dropdown-container #dropdown-toggle {
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 1.5em;
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px 20px;
+}
+body .dropdown-container #dropdown {
+  display: none;
+  transition: 0.5s;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.sliders {
+  text-align: center;
+}
+.sliders .slidecontainer {
+  width: 100%;
+}
+.sliders .slidecontainer .slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+.sliders .slidecontainer .slider:hover {
+  opacity: 1;
+}
+.sliders .slidecontainer .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: url("../images/contrast-svgrepo-com.svg");
+  cursor: pointer;
+}
+.sliders .slidecontainer .slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: url("../images/contrast-svgrepo-com.svg");
+  cursor: pointer;
+}
+.sliders .slidecontainer .slider .item {
+  color: #964792;
+}
+
+/*# sourceMappingURL=main.css.map */

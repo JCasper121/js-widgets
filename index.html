@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css"/>
+    <title>Document</title>
+</head>
+<body id="body">
+    <div id="container"> 
+        <div class="dropdown-container">
+            <nav>
+                <div class="nav-links">
+                    <div class="nav-link">Home</div>
+                    <div class="nav-link">Browse</div>
+                    <div class="nav-link">About</div>
+                </div>
+            </nav>
+            <div id="dropdown-toggle">
+                Set theme
+            </div>
+            <div id="dropdown" data-visiblity="false">
+                <section id="slider-wrapper">
+                    <div class="sliders">
+                        <h1>Custom Range Slider</h1>
+                        <div class="slidecontainer red-slider">
+                            <p>Red:</p>
+                            <input type="range" min="1" max="100" value="50" class="slider" id="redSlider">
+                            <span id="redDemo"></span>
+                        </div>
+                        <div class="slidecontainer green-slider">
+                            <p>Green:</p>
+                            <input type="range" min="1" max="100" value="50" class="slider" id="greenSlider">
+                            <span id="greenDemo"></span>
+                        </div>
+                        <div class="slidecontainer blue-slider">
+                            <p>Blue:</p>
+                            <input type="range" min="1" max="100" value="50" class="slider" id="blueSlider">
+                            <span id="blueDemo"></span>
+                        </div>
+                        <div class="slidecontainer opacity-slider">
+                            <p>Opacity:</p>
+                            <input type="range" min="1" max="100" value="50" class="slider" id="opacitySlider">
+                            <span id="opacityDemo"></span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <section id="flipping-cards">
+            <h1>Card Flip with Text</h1>
+            <h3>Hover over the image below:</h3>
+            <div class="card-flip">
+                <div class="card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/devtrunk.jpg" alt="Avatar" style="width:300px;height:300px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>John Doe</h1> 
+                            <p>Architect & Engineer</p> 
+                            <p>We love that guy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/edutechional.jpg" alt="Avatar" style="width:300px;height:300px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>John Doe</h1> 
+                            <p>Architect & Engineer</p> 
+                            <p>We love that guy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/shop-hacker.jpg" alt="Avatar" style="width:300px;height:300px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>John Doe</h1> 
+                            <p>Architect & Engineer</p> 
+                            <p>We love that guy</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </div>
+</body>
+<script src="scripts/slider.js"></script>
+<script src="scripts/dropdown.js"></script>
+<!-- <script src="./main.js"></script> -->
+</html>
